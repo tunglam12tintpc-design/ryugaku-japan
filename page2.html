@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>留学先：日本 — 大学・生活</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #fff5f7;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 11px;
+    }
+    nav a {
+      color: #ffccd5;
+      text-decoration: none;
+      margin: 0 14px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    nav a:hover { color: white; text-decoration: underline; }
+    nav a.active { color: #ff8099; border-bottom: 2px solid #ff8099; padding-bottom: 2px; }
+
+    .page-header {
+      background-color: #e8405a;
+      color: white;
+      padding: 28px 20px;
+      text-align: center;
+    }
+    .page-header h1 {
+      font-family: 'Kosugi Maru', sans-serif;
+      font-size: 30px;
+      text-shadow: 2px 2px 0 #a01030;
+    }
+    .page-header p { font-size: 14px; opacity: 0.9; margin-top: 6px; }
+
+    main {
+      flex: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 36px 20px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #e8405a;
+      border-left: 6px solid #e8405a;
+      padding-left: 12px;
+      margin-top: 44px;
+      margin-bottom: 18px;
+    }
+
+    /* テーブル */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th {
+      background-color: #e8405a;
+      color: white;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f0c0c8;
+    }
+    tr:nth-child(even) { background-color: #fff0f3; }
+
+    /* ギャラリー */
+    .gallery {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 190px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid #f0a0b0;
+    }
+    .gallery img:hover {
+      border-color: #e8405a;
+      transform: scale(1.04);
+      transition: 0.2s;
+    }
+
+    /* リスト */
+    ul.nice {
+      padding-left: 20px;
+      line-height: 2.2;
+      font-size: 14px;
+    }
+    ul.nice li::marker { color: #e8405a; }
+
+    /* ハイライト */
+    .highlight {
+      background: #ffe0e8;
+      border-left: 5px solid #e8405a;
+      padding: 16px 20px;
+      border-radius: 0 10px 10px 0;
+      margin-top: 20px;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .page-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      gap: 12px;
+    }
+    .page-nav a {
+      background-color: #e8405a;
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 24px;
+      font-size: 13px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+    .page-nav a:hover { background-color: #c0302a; }
+    .page-nav a.prev { background-color: #aaa; }
+    .page-nav a.prev:hover { background-color: #888; }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 18px;
+      font-size: 12px;
+    }
+    footer span { color: #e8405a; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="hyoshi.html">🌸 表紙</a>
+  <a href="mokuji.html">📋 目次</a>
+  <a href="page1.html">🗾 日本について</a>
+  <a href="page2.html" class="active">🎓 大学・生活</a>
+  <a href="page3.html">📝 手続き・まとめ</a>
+</nav>
+
+<div class="page-header">
+  <h1>🎓 大学紹介・留学生活</h1>
+  <p>ページ 2 / 3 — 本文</p>
+</div>
+
+<main>
+
+  <!-- 大学紹介 -->
+  <h2>③ 代表的な日本の大学</h2>
+  <table>
+    <tr>
+      <th>大学名</th>
+      <th>所在地</th>
+      <th>特徴</th>
+    </tr>
+    <tr>
+      <td>🏛️ 東京大学</td>
+      <td>東京都</td>
+      <td>日本トップの国立大学。理系・文系ともに世界最高水準。</td>
+    </tr>
+    <tr>
+      <td>🏯 京都大学</td>
+      <td>京都府</td>
+      <td>ノーベル賞受賞者多数。自由な学風で知られる。</td>
+    </tr>
+    <tr>
+      <td>🌊 大阪大学</td>
+      <td>大阪府</td>
+      <td>医学・工学分野で特に高い評価を得ている。</td>
+    </tr>
+    <tr>
+      <td>🎌 早稲田大学</td>
+      <td>東京都</td>
+      <td>日本最大級の私立大学。留学生受け入れ数がトップクラス。</td>
+    </tr>
+    <tr>
+      <td>🎏 慶應義塾大学</td>
+      <td>東京都</td>
+      <td>経営・法律・医学で高評価。英語プログラムも充実。</td>
+    </tr>
+  </table>
+
+  <!-- 留学生活 -->
+  <h2>④ 日本での留学生活</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80" alt="東京の夜景" />
+    <img src="https://images.unsplash.com/photo-1493997181344-712f2f19d87a?w=400&q=80" alt="ラーメン" />
+    <img src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=400&q=80" alt="桜" />
+    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80" alt="和食" />
+  </div>
+
+  <ul class="nice" style="margin-top: 22px;">
+    <li>🏠 学生寮の家賃：約 <strong>2万〜4万円 / 月</strong></li>
+    <li>🍱 外食の目安：<strong>500〜800円</strong>（定食・ラーメンなど）</li>
+    <li>🚇 電車賃：<strong>200〜400円</strong>（1回あたり）</li>
+    <li>📱 スマホのSIM：約 <strong>3,000円 / 月</strong></li>
+    <li>💰 月の生活費の目安：<strong>8万〜12万円</strong></li>
+  </ul>
+
+  <div class="highlight">
+    💡 <strong>アルバイトについて：</strong>
+    留学ビザでは週 <strong>28時間まで</strong>アルバイトができます。
+    東京の最低賃金は約 <strong>1,113円 / 時間</strong>で、
+    コンビニ・飲食店・日本語講師補助など留学生向けの仕事がたくさんあります。
+    働きながら日本語力を上げられるのも大きなメリットです！
+  </div>
+
+  <div class="page-nav">
+    <a href="page1.html" class="prev">← 前のページへ</a>
+    <a href="page3.html">次のページへ →</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>HTML発表課題 ── 留学先：<span>日本</span> 🌸 &nbsp;|&nbsp; ページ 2 / 3</p>
+</footer>
+
+</body>
+</html>
